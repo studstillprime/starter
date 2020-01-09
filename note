@@ -1,0 +1,9 @@
+#!/bin/bash
+# Attaches a note to the pile, from anywhere
+
+if [ $1 = lk ] 
+then 
+	cat /home/studstill/notefile
+else
+	cat >> /home/studstill/notefile;
+fi
