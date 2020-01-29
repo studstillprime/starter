@@ -1,0 +1,23 @@
+#!/bin/bash
+
+# Confirm fresh ./tmp directory to safely create files.
+
+if [ ! -d ./tmp ]; then
+	mkdir ./tmp
+	echo -n "New Temp Directory -> ";
+	cd ./tmp
+	pwd
+else	
+while [ -d ./tmp ];
+do
+	cd ./tmp;
+	echo "Got One";
+	if [ ! -d ./tmp ]; then
+		mkdir ./tmp;
+		echo -n "New Temp Directory";
+		cd ./tmp
+		pwd
+		break
+	fi
+done
+

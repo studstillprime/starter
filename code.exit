@@ -1,0 +1,10 @@
+#!/bin/bash
+
+testfile=$1
+
+if ./$testfile; then
+    echo "$testfile finished without errors!"
+else
+    echo "$testfile failed.  Aborting!"
+    exit 1
+fi
