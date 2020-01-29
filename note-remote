@@ -5,11 +5,13 @@ lk)
 cat ~/notefile
 ;;
 lks)
-rsync root@167.172.23.63:~/notefile note.sync
-cat -n ~/notefile note.sync | sort -uk2 | sort -nk1 | cut -f2- | tee ~/notefile
-rm note.sync
-rsync ~/notefile root@167.172.23.63:~/notefile
-echo "Synced!"
+# Figure this out better
+# rsync root@167.172.23.63:~/notefile note.sync
+# cat -n ~/notefile note.sync | sort -uk2 | sort -nk1 | cut -f2- | tee ~/notefile
+# rm note.sync
+# rsync ~/notefile root@167.172.23.63:~/notefile
+#  echo "Synced!"
+echo "Cannot Sync From This Machine"
 ;;
 #Figure out how to make this a wildcard comline arg.
 B:|TD:|J:|Q:) 
